@@ -1,0 +1,484 @@
+@charset "UTF-8";
+
+/*--------------------------------------------------------------------
+
+1 汎用設定
+
+--------------------------------------------------------------------*/
+
+* {
+margin:0;
+padding:0;
+}
+
+body {
+font-size:16px;
+color:#383838;
+font-family:Roboto,游ゴシック体,YuGothic,游ゴシック Medium,Yu Gothic Medium,ヒラギノ角ゴ Pro W3,Hiragino Kaku Gothic Pro,Verdana,メイリオ,Meiryo,Osaka,ＭＳ Ｐゴシック,MS PGothic,Font Awesome\\ 5 Free,Font Awesome\\ 5 Brands,sans-serif;
+overflow-wrap:break-word;
+word-break: break-all;
+background:#333;
+}
+html {
+overflow-y:scroll;
+}
+h1,h2,h3,h4,h5,h6 {
+margin: 0 0 10px 0;
+}
+p,li,dt,dl {
+line-height:1.6;
+}
+li {
+list-style-type:none;
+}
+img {
+border:0;
+}
+address {
+font-style:normal;
+}
+table {
+width: 100%;
+border-spacing: 0;
+border-right: 1px solid;
+border-bottom: 1px solid;
+}
+table td {
+border: 1px solid;
+border-right: 0px;
+border-bottom: 0px;
+padding: 7px;
+}
+.clear {
+clear:both;
+}
+
+/* リンク
+------------------------------------- */
+a:link {
+color:#999;
+text-decoration:none;
+}
+a:visited {
+color:#999;
+text-decoration:none;
+}
+a:hover {
+text-decoration:underline;
+opacity: 0.8;
+transition: background-color .2s ease-in-out, border-color .2s ease-in-out, color .2s ease-in-out, opacity .2s ease-in-out;
+}
+a:active {
+color:#999;
+}
+a img:hover {
+opacity: 0.8;
+text-decoration:none;
+transition: background-color .2s ease-in-out, border-color .2s ease-in-out, color .2s ease-in-out, opacity .2s ease-in-out;
+}
+.link a {
+text-decoration:none;
+}
+.link:hover {
+opacity: 0.8;
+text-decoration:none;
+transition: background-color .2s ease-in-out, border-color .2s ease-in-out, color .2s ease-in-out, opacity .2s ease-in-out;
+}
+.underline {
+color:#0693e3  !important;
+text-decoration:underline !important;
+}
+
+/* 画像
+------------------------------------- */
+img {
+height: auto;
+max-width: 100%;
+}
+
+/* フォーム
+------------------------------------- */
+input[type="text"], input[type="email"], input[type="url"], input[type="password"], input[type="search"], input[type="file"], textarea {
+border: solid 1px #e6e6e6;
+color: #666;
+margin-top: 4px;
+padding: 8px;
+max-width: 95%;
+}
+iframe {
+max-width: 95%;
+}
+
+/* clearfix（回り込み解除）
+------------------------------------- */
+.clearfix:before,
+.clearfix:after{
+content:"";
+display:table;
+}
+.clearfix:after{
+clear:both;
+}
+.clearfix{
+*zoom:1;
+}
+
+
+
+/* float（回り込み）
+------------------------------------- */
+.clear{
+clear:both;
+}
+.floatLeft{
+float:left !important;
+}
+.floatRight{
+float:right !important;
+}
+
+
+
+/* justify（行揃え）
+------------------------------------- */
+.left{
+text-align:left !important;
+}
+.right{
+text-align:right !important;
+}
+.center{
+text-align:center !important;
+}
+
+
+
+/* scroll（スクロールバー表示）
+------------------------------------- */
+/* スクロール防止 */
+.scroll-prevent {
+position: fixed;
+z-index: -1;
+width: 100%;
+height: 100%;
+}
+
+/* margin,padding
+------------------------------------- */
+.mt--5        { margin-top: -5px !important; }
+.mt--15        { margin-top: -15px !important; }
+.mt-0        { margin-top: 0px !important; }
+.mt-5        { margin-top: 5px !important; }
+.mt-10        { margin-top: 10px !important; }
+.mt-15        { margin-top: 15px !important; }
+.mt-20        { margin-top: 20px !important; }
+.mt-25        { margin-top: 25px !important; }
+.mt-30        { margin-top: 30px !important; }
+.mt-35        { margin-top: 35px !important; }
+.mt-40        { margin-top: 40px !important; }
+.mt-45        { margin-top: 45px !important; }
+.mt-50        { margin-top: 50px !important; }
+
+.mb-0        { margin-bottom: 0px !important; }
+.mb-5        { margin-bottom: 5px !important; }
+.mb-10        { margin-bottom: 10px !important; }
+.mb-15        { margin-bottom: 15px !important; }
+.mb-20        { margin-bottom: 20px !important; }
+.mb-25        { margin-bottom: 25px !important; }
+.mb-30        { margin-bottom: 30px !important; }
+.mb-35        { margin-bottom: 35px !important; }
+.mb-40        { margin-bottom: 40px !important; }
+.mb-45        { margin-bottom: 45px !important; }
+.mb-50        { margin-bottom: 50px !important; }
+
+.mr-10        { margin-right: 10px !important; }
+.mr-20        { margin-right: 20px !important; }
+.ml-0        { margin-left: 0px !important; }
+.ml-10        { margin-left: 10px !important; }
+
+.pl-0        { padding-left: 0px !important; }
+.pb-0        { padding-bottom: 0px !important; }
+
+/*--------------------------------------------------------------------
+
+2 レイアウト設定
+
+--------------------------------------------------------------------*/
+
+.wrap{
+max-width:1200px;
+margin:0 auto;
+/* sticky が効かなくなるのでコメントアウト
+overflow: hidden;
+*/
+background:#f4f4f4;
+}
+
+/*--------------------------------------------------------------------
+
+3 ページ毎の設定
+
+--------------------------------------------------------------------*/
+
+/* ヘッダー */
+.header {
+background:#222;
+padding:0 16px 0 16px;
+color:#fff;
+}
+.header .logo{
+display:inline-block;
+}
+.header .logo {
+font-size: 1.2em;
+line-height: 42px;
+}
+
+/* 検索（ヘッダー&ドロワーメニュー&404ページ） */
+.header .search {
+display: none;
+}
+.search input[type="search"] {
+max-width: 300px;
+margin-top: 0px;
+border-radius:10px;
+background: url(../images/search-icon.png) 5px center no-repeat;
+background-color: #fff;
+background-size: 16px 16px;
+padding-left: 25px;
+}
+.search .screen-reader-text,
+.search .search-submit {
+display: none;
+}
+
+/* PC向けヘッダーナビゲーション */
+#pc-menu {
+display: none;
+}
+
+/* SP向けドロワーメニュー */
+.header #menu-btn {
+display: block;
+float: right;
+zoom: 1.8;
+padding-top: 3px;
+}
+.header #menu-btn a {
+color: #fff;
+}
+#menu {
+position: fixed;
+top: 0;
+right: -340px;
+max-width: 300px;
+width: 80%;
+height: 100%;
+transition: left .5s, right .5s;
+background-color: #fff;
+overflow-y: auto;
+height: 100%;
+-ms-overflow-style: none;
+scrollbar-width: none;
+z-index: 9999;
+}
+#menu::-webkit-scrollbar {
+display:none;
+}
+#menu .search {
+padding: 40px 0 10px 15px;
+}
+#menu .search input[type="search"] {
+width: 95%;
+}
+#menu nav ul {
+margin: 0;
+padding-left: 0;
+}
+#menu nav li {
+list-style: none;
+padding-bottom: 10px;
+}
+#menu nav li a {
+border-bottom: 1px solid #d2d0d0;
+padding: 12px 20px;
+font-size: 0.8em;
+color: #999;
+display: block;
+position: relative;
+}
+#menu.open {
+right: 0;
+}
+#menu .menu-close-btn {
+padding: 5px;
+float: right;
+zoom: 1.5;
+}
+#layer-panel {
+z-index: 99;
+background: #666;
+opacity: 0.5;
+width: 100%;
+height: 100%;
+position: absolute;
+top: 0;
+}
+
+/* コンテンツ全体 */
+.content {
+padding:8px 16px 8px 16px;
+}
+
+.content h1 a,h2 a,h3 a,h4 a{
+color: #000 !important;
+}
+
+/* フッター */
+.footer{
+background: #222;
+text-align:center;
+color:#fff;
+}
+
+.footer .footer2{
+font-size:0.8em;
+height:10px;
+padding: 7px;
+}
+
+/* TOPへ戻る */
+#page-top {
+position: fixed;
+bottom: 32px;
+right: 16px;
+z-index:100;
+transition: top .5s, bottom .5s;
+}
+#page-top a {
+background: #999;
+color: #fff;
+width: 50px;
+padding: 15px 0;
+text-align: center;
+display: block;
+border-radius: 25px;
+}
+#page-top.hide {
+bottom: -100px;
+}
+
+
+.photogallery {
+  display: flex;
+  display: -webkit-flex;
+  flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  }
+  .photogallery .photo {
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin: 1%;
+  overflow: hidden;
+  }
+  .photogallery .photo:before {
+  content: "";
+  display: block;
+  padding-top: 100%;
+  }
+  .photogallery .inner {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  }
+  .photogallery .square {
+  width: 100%;
+  position: relative;
+  }
+  .photogallery .square::before {
+  content: "";
+  display: block;
+  padding-top: 100%;
+  }
+  .photogallery .square img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  object-fit: cover;
+  }
+  .photogallery .txt {
+  position: absolute;
+  background-color: #fff;
+  bottom: 0px;
+  opacity: 0.8;
+  padding: 5px;
+  font-size: 0.8em;
+  }
+  
+  
+/* 画面サイズが640pxより大きい場合に以下を適用 */
+@media screen and (min-width:640px){
+  
+  .photogallery .photo {
+    width: 48%;
+    margin: 1%;
+  }
+ 
+}
+
+/* 画面サイズが760pxより大きい場合に以下を適用 */
+@media screen and (min-width:760px){
+  
+  .photogallery .photo {
+    width: 31%;
+    margin: 1%;
+  }
+ 
+}
+
+/* 画面サイズが992pxより大きい場合に以下を適用 */
+@media screen and (min-width:992px){
+
+  .photogallery .photo {
+    width: 23%;
+    margin: 1%;
+  }
+ 
+  .header .logo {
+  font-size: 1.8em;
+  }
+  .header .search {
+  display: block;
+  float: right;
+  color: #666;
+  font-size: 0.8em;
+  margin: 6px 12px 6px 6px;
+  }
+  .header #menu-btn {
+  display: none;
+  }
+
+  #pc-menu {
+  display: block;
+  background:#222;
+  padding:0 16px 0 16px;
+  text-align: center;
+  font-size: 1em;
+  line-height: 32px;
+  }
+  #pc-menu nav {
+  width:100%;
+  display: inline-block;
+  margin: 0 auto;
+  }
+  #pc-menu a {
+  color:#fff;
+  }
+  #pc-menu ul li{
+  display: inline;
+  margin-right: 25px;
+  }
+}

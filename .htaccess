@@ -1,0 +1,10 @@
+
+# design
+RewriteEngine On
+RewriteBase /design/
+RewriteCond %{REQUEST_URI} !/design/dist
+RewriteCond %{REQUEST_URI} !/design/git-hook.php
+RewriteRule ^(.*)$ dist/$1 [L]
+
+
+

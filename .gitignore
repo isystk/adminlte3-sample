@@ -1,0 +1,11 @@
+# dependencies
+node_modules
+
+# generate
+#dist
+
+package-lock.json
+.DS_Store
+.history
+*.log
+*.lock
