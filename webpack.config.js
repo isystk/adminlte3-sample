@@ -10,15 +10,7 @@ const {CleanWebpackPlugin} = require('clean-webpack-plugin');
 const webpackConfig = {
   context: src,
   entry: {
-    index: './index.js',
-    layout: './layout.js',
-    blog: './blog.js',
-    lp: './lp.js',
-    form: './form.js',
-    form2: './form2.js',
-    admin: './admin.js',
-    admin2: './admin2.js',
-    gallery: './gallery.js',
+    index: './index.js'
   },
   output: {
     path: dist,
@@ -82,8 +74,8 @@ const webpackConfig = {
 Object.keys(webpackConfig.entry).forEach((key) => {
   webpackConfig.plugins.push(
     new HtmlWebpackPlugin({
-      template: (key==='index') ?  './assets/index.html' : './assets/html/'+key+'.html', // Source
-      filename: (key==='index') ?  './index.html' : './html/'+key+'.html', // Dist
+      template: './assets/index.html',
+      filename: './index.html',
       inject: true,
       chunks: [key], // insert to the root of output folder
     })
