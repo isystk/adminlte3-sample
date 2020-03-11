@@ -1,13 +1,10 @@
-adminLTE-sample
+adminLTE3-sample
 ====
 
 ## Description
 
-PSD
-https://adobe.ly/2FwI8Ik
-
-参考サイト
-https://tadtadya.com/html5-css3-i-created-a-basic-format-for-responsive/
+Bootstrap4
+https://getbootstrap.jp/docs/4.4/layout/overview/
 
 アイコン（fontawesome）
 https://fontawesome.com/icons?d=gallery
