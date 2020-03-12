@@ -3,7 +3,12 @@ adminlte3-sample
 
 [![Build Status](https://travis-ci.org/isystk/adminlte3-sample.svg?branch=master)](https://travis-ci.org/isystk/adminlte3-sample)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/a0383e55ada246b2b9f1ba4edfa6c94f)](https://www.codacy.com/manual/isystk/adminlte3-sample?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=isystk/adminlte3-sample&amp;utm_campaign=Badge_Grade)
-[![MIT License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)](LICENSE)
+![GitHub issues](https://img.shields.io/github/issues/isystk/adminlte3-sample)
+![GitHub forks](https://img.shields.io/github/forks/isystk/adminlte3-sample)
+![GitHub stars](https://img.shields.io/github/stars/isystk/adminlte3-sample)
+![GitHub license](https://img.shields.io/github/license/isystk/adminlte3-sample)
+![Twitter](https://img.shields.io/github/issues/isystk/adminlte3-sample)
+
 
 ## Description
 
