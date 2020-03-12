@@ -46,7 +46,7 @@ const webpackConfig = {
                       name: '[name].[ext]',
                       outputPath : 'images/',
                       publicPath : function(path){
-                          return '../images/' + path;
+                          return './images/' + path;
                       },
                       esModule: false
                   }
