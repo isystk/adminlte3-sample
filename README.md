@@ -1,17 +1,23 @@
-adminLTE3-sample
+adminlte3-sample
 ====
+
+[![Build Status](https://travis-ci.org/isystk/adminlte3-sample.svg?branch=master)](https://github.com/isystk/adminlte3-sample)
+[![MIT License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)](LICENSE)
 
 ## Description
 
-Bootstrap4
-https://getbootstrap.jp/docs/4.4/layout/overview/
+AdminLTE Docs
+https://adminlte.io/docs/2.4/installation
+
+Bootstrap4 日本語リファレンス
+https://getbootstrap.jp/docs/4.4/getting-started/introduction/
 
 アイコン（fontawesome）
 https://fontawesome.com/icons?d=gallery
 
 
 ## Demo
-https://demo.isystk.com/adminLTE/
+https://demo.isystk.com/adminlte3/
 
 ## VS. 
 
@@ -36,7 +42,7 @@ open http://localhost:3000/
 
 ## Licence
 
-[MIT](https://github.com/isystk/adminLTE-sample/LICENCE)
+[MIT](https://github.com/isystk/adminlte3-sample/LICENCE)
 
 ## Author
 

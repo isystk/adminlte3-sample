@@ -1,9 +1,9 @@
 
-# design
+# adminlte3
 RewriteEngine On
-RewriteBase /design/
-RewriteCond %{REQUEST_URI} !/design/dist
-RewriteCond %{REQUEST_URI} !/design/git-hook.php
+RewriteBase /adminlte3/
+RewriteCond %{REQUEST_URI} !/adminlte3/dist
+RewriteCond %{REQUEST_URI} !/adminlte3/git-hook.php
 RewriteRule ^(.*)$ dist/$1 [L]
 
 
