@@ -1,7 +1,8 @@
 adminlte3-sample
 ====
 
-[![Build Status](https://travis-ci.org/isystk/adminlte3-sample.svg?branch=master)](https://github.com/isystk/adminlte3-sample)
+[![Build Status](https://travis-ci.org/isystk/adminlte3-sample.svg?branch=master)](https://travis-ci.org/isystk/adminlte3-sample)
+[![Coverage Status](https://coveralls.io/repos/github/isystk/adminlte3-sample/badge.svg)](https://coveralls.io/github/isystk/adminlte3-sample)
 [![MIT License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)](LICENSE)
 
 ## Description
