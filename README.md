@@ -7,7 +7,6 @@ adminlte3-sample
 ![GitHub forks](https://img.shields.io/github/forks/isystk/adminlte3-sample)
 ![GitHub stars](https://img.shields.io/github/stars/isystk/adminlte3-sample)
 ![GitHub license](https://img.shields.io/github/license/isystk/adminlte3-sample)
-![Twitter](https://img.shields.io/twitter/url?style=social)
 
 
 ## Description
