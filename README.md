@@ -1,6 +1,7 @@
 adminlte3-sample
 ====
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/d0e5f746dc074f698a9b71cd29fd6494)](https://app.codacy.com/manual/isystk/adminlte3-sample?utm_source=github.com&utm_medium=referral&utm_content=isystk/adminlte3-sample&utm_campaign=Badge_Grade_Dashboard)
 [![Build Status](https://travis-ci.org/isystk/adminlte3-sample.svg?branch=master)](https://travis-ci.org/isystk/adminlte3-sample)
 [![Coverage Status](https://coveralls.io/repos/github/isystk/adminlte3-sample/badge.svg)](https://coveralls.io/github/isystk/adminlte3-sample)
 [![MIT License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)](LICENSE)
