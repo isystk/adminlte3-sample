@@ -1,6 +1,7 @@
 adminlte3-sample
 ====
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/d0e5f746dc074f698a9b71cd29fd6494)](https://app.codacy.com/manual/isystk/adminlte3-sample?utm_source=github.com&utm_medium=referral&utm_content=isystk/adminlte3-sample&utm_campaign=Badge_Grade_Dashboard)
 [![Build Status](https://travis-ci.org/isystk/adminlte3-sample.svg?branch=master)](https://travis-ci.org/isystk/adminlte3-sample)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/a0383e55ada246b2b9f1ba4edfa6c94f)](https://www.codacy.com/manual/isystk/adminlte3-sample?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=isystk/adminlte3-sample&amp;utm_campaign=Badge_Grade)
 ![GitHub issues](https://img.shields.io/github/issues/isystk/adminlte3-sample)
